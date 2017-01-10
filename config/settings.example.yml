@@ -1,0 +1,8 @@
+development: &base
+  database_url: 'postgres://localhost/eligio_development'
+  session_secret: '1bb04685036c1e1b1da158cd3eac39dd'
+test:
+  <<: *base
+  database_url: 'postgres://localhost/eligio_test'
+production:
+  <<: *base
